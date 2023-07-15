@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IchiroDev</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+    <style>
+        section#container {
+            display: flex;
+        }
+
+        main section.imagem {
+            background-image: url("imagens/kot-985-1500.jpg");
+        }
+
+        @media (max-width: 720px) {
+            section#container {
+                display: block;
+                /*se atela for menor que 800px tabela e lista fuciona como bloco*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>&lt;IchiroDev&gt;</h1>
+        <p>Seu SITE de Notícias, Tecnologia e Programação</p>
+    </header>
+    <nav>
+        <a href="python.html">Python</a>
+        <a href="kotlin.html">Kotlin</a>
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+    <main>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ew3QqUN5aF8?start=148" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <section class="imagem" id="container">
+            <div id="tabela">
+                <table>
+                    <caption>
+                        Melhores Plataforma de cursos Online
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th style="width: 140px;">Curso</th>
+                            <th>Descrição</th>
+                            <th style="width: 140px;">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EbackOnline</td>
+                            <td>Pago</td>
+                            <td><a href="https://ebaconline.com.br/android-kotlin?utm_source=google&utm_medium=cpc&utm_campaign=course_0_all_google_perf-max_all_conversions_all&utm_content=c_20157410283|adg_|ad_|ph_|key_|dev_m|pst_|rgnid_1001625|placement_&gclid=Cj0KCQjw756lBhDMARIsAEI0AgkgxZWyAbNuYyKGBHIM__ziFWZMXzH2JLZTjWz7tH236QehXNkwNvUaAuehEALw_wcB" target="_blank">Acesse aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Estudonauta</td>
+                            <td>Pago</td>
+                            <td><a href="https://www.estudonauta.com/matricula/?gclid=Cj0KCQjw756lBhDMARIsAEI0AgkW1Pw_WLRl0zflVTkXqS5VAAmNUUIPGWUu4Ct00Kq_q3Up8KAH6ZgaAs25EALw_wcB" target="_blank">Acesse aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Udemy</td>
+                            <td>Pago</td>
+                            <td><a href="https://www.udemy.com/" target="_blank">Acesse aqui</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="lista">
+                <h1>Baixe aqui os arquivos Necessários...</h1>
+                <ul>
+                    <li>Baixar Java JDK:</li>
+                    <p>Baixe o java development kit no site ofical <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Clique aqui</a></p>
+                    <li>Baixar VSCode Studio:</li>
+                    <p>Para baixar a IDE VScode Studio <a href="https://code.visualstudio.com/download" target="_blank">Clique aqui</a></p>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <article>
+            <h1>Linguagem de programação Kotlin</h1>
+            <picture>
+                <source media="(max-width: 725px)" srcset="imagens/kotlin-395-195.png" type="image/png" />
+                <source media="(max-width: 985px)" srcset="imagens/kotlin-700-360.png" type="image/png" />
+                <img src="imagens/kotlin-960-490.png" alt="python" />
+            </picture>
+
+            <p>
+                A linguagem de programação Kotlin é uma linguagem moderna, concisa e segura, que foi desenvolvida pela JetBrains e lançada em 2011. Ela é totalmente interoperável com o Java e é amplamente utilizada para o desenvolvimento de aplicativos Android, embora também possa ser usada em outras plataformas .
+            </p>
+            <hr>
+            <p>
+                <strong>Aqui estão algumas das principais aplicações e usos da linguagem deprogramação Kotlin.</strong>
+            </p>
+            <section class="imagem">
+                <h2>Desenvolvimento Android:</h2>
+                <p>
+                    Kotlin tornou-se a linguagem de programação oficial para o desenvolvimento de aplicativos Android. Ela oferece uma sintaxe mais concisa em comparação ao Java, atendendo a quantidade de código necessária para realizar tarefas comuns. Além disso, o Kotlin fornece recursos de segurança, como nulidade de tipos, que ajudam a evitar erros comuns em tempo de execução.
+                </p>
+            </section>
+            <section class="imagem">
+                <h2>Desenvolvimento de aplicativos multiplataforma:</h2>
+                <p>
+                    Kotlin também pode ser usado para o desenvolvimento de aplicativos multiplataforma, permitindo que você compartilhe código entre diferentes plataformas, como Android, iOS, web e até mesmo aplicativos desktop. O Kotlin Multiplatform permite compartilhar a lógica de negócios e reutilizar o código em vários projetos, com entusiasmo o esforço de desenvolvimento e manutenção.
+                </p>
+            </section>
+            <section class="imagem">
+                <h2>Desenvolvimento de backend:</h2>
+                <p>
+                    Kotlin é uma escolha viável para o desenvolvimento de servidores e aplicativos de backend. Com o framework Kotlin Ktor, é possível criar APIs RESTful e aplicativos web escaláveis e ficientes. A interoperabilidade com o Java permite aproveitar bibliotecas e estruturas de código aberto existentes.
+                </p>
+            </section>
+            <section class="imagem">
+                <h2>Desenvolvimento de scripts:</h2>
+                <p>
+                    Kotlin pode ser usado para escrever scripts de automação e tarefas de linha de comando. Ele fornece uma sintaxe limpa e expressiva, facilitando a criação de scripts para automatizar tarefas administrativas ou para operações de manutenção de sistemas.
+                </p>
+            </section>
+            <section class="imagem">
+                <h2>Desenvolvimento de jogos:</h2>
+                <p>
+                    Embora não seja tão amplamente usado quanto a outras linguagens específicas para jogos, Então Kotlin também pode ser usado no desenvolvimento de jogos.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <h3>
+            Essa página foi desenvolvida por Jefferson Tavares para o <a href="https://github.com/JeffersonTavares1?tab=repositories" target="_blank">GitHub</a> com o
+            propósito de estudo.
+        </h3>
+    </footer>
+</body>
+</html>

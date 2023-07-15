@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+@font-face {
+    font-family: "False";
+    src: url("../fontes/false/False.ttf") format("truetype");
+}
+
+:root {
+    --cor0: #e7f9a9;
+    --cor1: #9dbf9e;
+    --cor2: #537354;
+    --cor3: #fca311;
+    --cor4: #44355b;
+    --cor5: #31263e;
+    --cor6: #424242;
+
+    --font-principal: "False", Arial;
+    --font-titulo: "Aclonica", sans-serif;
+    --font-subtitulo: "Orbit", sans-serif;
+    --font-paragrafo: "Josefin Sans", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-color: var(--cor4);
+    text-align: center;
+}
+
+header>h1 {
+    font-family: var(--font-principal);
+    color: var(--cor1);
+    font-size: 3.5em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+header>p {
+    color: var(--cor3);
+    font-size: 1.6em;
+    padding-bottom: 25px;
+    font-family: var(--font-subtitulo);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor5));
+}
+
+nav>a {
+    text-decoration: none;
+    background-color: var(--cor2);
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--cor6);
+    font-family: var(--font-subtitulo);
+}
+
+nav>a:hover {
+    color: var(--cor4);
+}
+
+main {
+    background-color: white;
+    margin: 0px auto 0px auto;
+    padding: 30px 3px 5px 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 405px;
+    max-width: 967px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+main article>div {
+    margin: 0px 20px 0px 20px;
+}
+
+main article div>video {
+    width: 100%; /*aqui ele ta no tamanho 100% da div*/
+}
+
+main article picture>img {
+    width: 100%; /*imagens ocultando 100% da box*/
+}
+
+main article>h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: var(--cor4);
+    font-family: var(--font-titulo);
+}
+
+main article>h2 {
+    padding: 2px;
+    font-size: 1.5em;
+    color: var(--cor4);
+    font-family: var(--font-subtitulo);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+
+main article>p {
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: var(--cor6);
+    font-family: var(--font-paragrafo);
+    font-weight: bold;
+}
+
+main article>p>strong {
+    color: var(--cor4);
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 0px 4px;
+    border-radius: 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+main article aside {
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+main article aside>h1 {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    text-align: center;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    font-family: var(--font-principal);
+    border-radius: 10px 10px 0px 0px;
+}
+
+main article aside>ul {
+    list-style-position: inside; /*bota os pontos da ul pra dento da box do aside*/
+}
+
+main article aside ul>li {
+    padding: 10px 10px 0px 10px;
+    color: var(--cor0);
+    line-height: 1.5em;
+    font-family: var(--font-titulo);
+}
+
+main article aside ul>p {
+    color: white;
+    padding: 5px 20px 0px 20px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1em;
+    font-size: 1.1em;
+    font-family: var(--font-paragrafo);
+}
+
+main article aside ul>p:hover {
+    background-color: white;
+    color: var(--cor6);
+    margin: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+main article aside>p {
+    color: var(--cor0);
+    padding: 20px;
+    text-align: center;
+    text-indent: 20px;
+    line-height: 1.3em;
+    font-size: 1.1em;
+    text-align: justify;
+    font-family: var(--font-paragrafo);
+}
+
+footer {
+    background-color: var(--cor6);
+    margin: 5px 0px 5px 0px;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+footer>h3 {
+    background-color: var(--cor2);
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    color: var(--cor4);
+    font-family: var(--font-titulo);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+footer > h3 > a {
+    text-decoration: none;
+    color: var(--cor6);
+    font-family: var(--font-principal);
+}
+
+footer > h3 > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor6);
+    color: var(--cor1);
+    padding: 0px 5px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}

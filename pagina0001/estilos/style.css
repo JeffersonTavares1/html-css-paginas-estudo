@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'False';
+    src: url('../fontes/false/False.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMono-VariableFont_wght';
+    src: url('../fontes/roboto_mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CODE Light';
+    src: url('../fontes/code/CODE Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-BoldItalic';
+    src: url('../fontes/ubunto/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #83A680;
+    --cor1: #53754B;
+    --cor2: #A86E47;
+    --cor3: #5C371D;
+    --cor4: #493DA8;
+    --cor5: #383361;
+    
+    --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --font-titulo: 'False', Arial;
+    --font-subtitulo: 'CODE Light', Arial;
+    --font-paragrafo: 'RobotoMono-VariableFont_wght', Arial;
+    --font-destaque: 'Ubuntu-BoldItalic', Arial;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-weight: var(--font-padrao);
+}
+
+header {
+    background-color: var(--cor5);
+    padding-bottom: 10px;
+}
+
+header > h1 {
+    font-family: var(--font-titulo);
+    color: white;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+}
+
+header nav > a > img {
+    height: 45px;
+    width: 50px;
+    padding: 5px 0px 0px 5px;
+}
+
+main {
+    background-color: white;
+    padding: 5px;
+    min-width: 290px;
+    max-width: 945px;
+    margin: 5px auto 5px auto;
+    display: flex;
+}
+
+main article {
+    width: 50vw;
+    padding: 4px;
+    background-color: gainsboro;
+    
+}
+
+main article > div {
+    background-color: red;
+    min-height: 100px;
+    max-height: 900px;
+}
+
+main article > h2 {
+    font-family: var(--font-subtitulo);
+    color: var(--cor4);
+}
+
+main article > p {
+    font-family: var(--font-paragrafo)
+}
+
+main aside {
+    width: 50vw;
+    background-color: gainsboro;
+    
+}
+
+main aside nav > a > img {
+    width: 100%;
+}
+
+main aside nav > h2 {
+    font-family: var(--font-destaque);
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+}

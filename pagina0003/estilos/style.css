@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+@font-face {
+  font-family: "False";
+  src: url("../fontes/false/False.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "orbit";
+  src: url("../fontes/orbit/Orbit-Regular.ttf") format("truetype");
+}
+
+:root {
+  --cor: #cad2c5;
+  --cor0: #9dbf9e;
+  --cor1: #53696b;
+  --cor2: #846356;
+  --cor3: #4e477d;
+  --cor4: #362f63;
+  --cor5: #424242;
+
+  --font-principal: "False", sans-serif;
+  --font-titulo: "Aclonica", sans-serif;
+  --font-subtitulo: "orbit", sans-serif;
+  --font-paragrafo: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--cor2);
+}
+
+header {
+  background-color: var(--cor4);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+header > h1 {
+  font-size: 3.5em;
+  color: var(--cor0);
+  font-family: var(--font-principal);
+}
+
+header > p {
+  padding: 5px;
+  font-size: 2em;
+  color: var(--cor2);
+  font-family: var(--font-subtitulo);
+}
+
+nav {
+  background-color: var(--cor1);
+  background-image: linear-gradient(to bottom, var(--cor5) 20%, var(--cor4));
+  padding: 5px;
+}
+
+nav > a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.1em;
+  background-color: var(--cor2);
+  color: var(--cor4);
+  padding: 0px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  border-radius: 5px;
+  font-family: var(--font-subtitulo);
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  background-color: var(--cor4);
+  color: var(--cor0);
+  transition-duration: 0.5s;
+}
+
+main {
+  background-color: white;
+  margin: auto;
+  padding: 5px;
+  min-width: 400px;
+  /*A tela do main so vai diminuir ate esse tamanho*/
+  max-width: 960px;
+  /*A tela do main so vai aumentar ate esse tamanho*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: justify;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+div#lista,
+div#tabela {
+  background-color: var(--cor4);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.292);
+  opacity: 0.9;
+}
+
+div#tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+div#tabela table caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #c4c4c4;
+  color: var(--cor4);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 2px solid black;
+  font-family: var(--font-principal);
+}
+
+div#tabela table thead {
+  background-color: #424242;
+  color: white;
+}
+
+div#tabela table tbody > tr:nth-child(odd) {
+  background-color: #c4c4c4;
+}
+
+div#tabela table tbody > tr:nth-child(even) {
+  background-color: white;
+}
+
+div#tabela th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+div#tabela th {
+  font-family: var(--font-titulo);
+  color: var(--cor0);
+}
+
+div#tabela td {
+  font-family: var(--font-subtitulo);
+  color: var(--cor2);
+  font-weight: bold;
+  padding: 5px;
+}
+
+div#tabela td > a {
+  text-decoration: none;
+  color: var(--cor3);
+}
+
+div#tabela td > a:hover {
+  text-decoration: underline;
+  background-color: var(--cor);
+  padding: 0px 5px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+div#lista > h1 {
+  background-color: var(--cor2);
+  color: var(--cor4);
+  margin: -7px -7px 0px -7px;
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: var(--font-titulo);
+}
+
+div#lista > ul > li {
+  list-style-position: inside;
+  padding-top: 10px;
+  color: var(--cor0);
+  font-size: 1.4em;
+  font-family: var(--font-titulo);
+}
+
+div#lista p {
+  color: var(--cor);
+  margin: 5px 0px 5px 15px;
+  font-size: 1.2em;
+  font-family: var(--font-paragrafo);
+}
+
+div#lista p:hover {
+  background-color: var(--cor);
+  margin: 10px;
+  padding: 5px;
+  color: var(--cor5);
+  transition-duration: 0.6s;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+div#lista p > a {
+  background-color: var(--cor1);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  color: var(--cor);
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-family: var(--font-titulo);
+}
+
+div.video {
+  background-color: var(--cor4);
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.292);
+  position: relative;
+  padding-bottom: 51%;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+main article > h1 {
+  margin: 30px 10px 20px 10px;
+  text-align: center;
+  font-size: 2em;
+  color: var(--cor3);
+  font-family: var(--font-titulo);
+}
+
+main article picture > img {
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main article p {
+  padding: 10px;
+  text-indent: 20px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: var(--cor5);
+  font-family: var(--font-paragrafo);
+}
+
+main strong {
+  color: var(--cor4);
+  font-size: 1.2em;
+}
+
+main section.imagem {
+  background-image: url("../imagens/cobra-985-1500.jpg");
+  background-position: right center;
+  background-color: var(--cor5);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+main article > section.imagem > h2 {
+  background-color: #ffffffb0;
+  color: var(--cor4);
+  font-size: 1.8em;
+  text-align: center;
+  font-family: var(--font-subtitulo);
+}
+
+main article > section.imagem > p {
+  background-color: #ffffffb0;
+}
+
+main article > section.imagem > p:hover {
+  background-color: var(--cor);
+  color: var(--cor5);
+  padding: 15px 10px;
+  transition-duration: 0.3s;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+footer {
+  background-image: linear-gradient(to bottom, var(--cor5) 20%, var(--cor4));
+  margin: 5px 0px;
+  padding: 10px;
+}
+
+footer > h3 {
+  background-color: var(--cor2);
+  color: var(--cor4);
+  font-family: var(--font-principal);
+  padding: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.292);
+}
+
+footer h3 > a {
+  background-color: var(--cor1);
+  color: var(--cor);
+  padding: 0px 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: var(--font-titulo);
+}
