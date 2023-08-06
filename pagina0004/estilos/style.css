@@ -31,7 +31,7 @@ section {
 
 div#apresentacao {
 	height: 420px;
-	flex-grow: 1; /*se adaptar ao fim da tela mesmo tipo width mais de forma responsiva*/
+	width: 390px;
 	margin: 5px;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -60,7 +60,7 @@ div#apresentacao h1 {
 	width: 370px;
 	margin: 5px;
 	padding: 5px;
-	border: 2px solid black;
+	border: 1px solid black;
 	border-radius: 10px;
 	background-color: #424242;
 	color: whitesmoke;
@@ -82,12 +82,16 @@ div.info {
 }
 
 div.info > input {
-    width: 183px;
+    width: 187.6px;
     padding: 10px;
     background-color: #39355C;
     color: #9DBF9E;
     border: none;
     border-radius: 7px;
+}
+
+div#butao {
+    width: 380px;
 }
 
 footer {
