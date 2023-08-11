@@ -1,7 +1,13 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 body {
@@ -10,18 +16,28 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between; /*cria espaçamento igual verticalmente entre os ícones*/
+    align-items: center; /*centralizado verticalmente os icons */
 	background-color: #39355C;
-	text-align: center;
+	padding: .5rem 1rem;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	color: #9DBF9E;
 }
 
-header > h1 {
-	padding: 20px;
-	font-size: 1.6rem;
+div.logo > a {
 	color: #E7F9A9;
+	text-decoration: none;
+}
+
+div.icon > a  {
+    color: inherit;
 }
 
 section {
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap-reverse; /*inverteu botou a tela de form em baixo e a tela de apresentação em cima*/
     background-color: whitesmoke;
     border-radius: 0px 0px 10px 10px;
@@ -30,8 +46,8 @@ section {
 }
 
 div#apresentacao {
-	height: 420px;
-	width: 390px;
+	height: 470px;
+	width: 500px;
 	margin: 5px;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -51,16 +67,16 @@ div#fundo2 {
     background-color: #48489C;
 }
 
-div#apresentacao h1 {
+div#fundo2 > h1 {
     text-align: center;
-    padding-top: 30px;
+    padding: 10px
 }
 
 .info {
 	width: 370px;
 	margin: 5px;
 	padding: 5px;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 10px;
 	background-color: #424242;
 	color: whitesmoke;
@@ -77,21 +93,17 @@ fieldset.info > input {
 	color: black;
 }
 
-div.info {
-    padding: 0px;
+div {
+    text-align: center;
 }
 
-div.info > input {
-    width: 187.6px;
+div > input {
+    width: 90%;
     padding: 10px;
     background-color: #39355C;
     color: #9DBF9E;
     border: none;
     border-radius: 7px;
-}
-
-div#butao {
-    width: 380px;
 }
 
 footer {
