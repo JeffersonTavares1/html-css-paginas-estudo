@@ -25,7 +25,7 @@ div#l-header {
     align-items: center;
 }
 
-div#l-header i {
+div#l-header span {
     color: #39355C;
     font-size: 2rem;
 }
@@ -42,16 +42,22 @@ div#l-nav {
     gap: 20px;
 }
 
-div#l-input {
+div#form {
+    display: none;
+}
+
+div#form {
     text-align: center;
 }
 
-div#l-input input {
+div#form input {
     padding: 5px;
     border-radius: 10px;
     border: 2px solid #2B253D;
+    outline: none;
+    
 }
 
-div#l-input input#pesquisa {
+div#firm input#pesquisa {
     width: 300px;
 }

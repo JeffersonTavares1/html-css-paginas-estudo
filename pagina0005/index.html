@@ -12,19 +12,30 @@
 <body>
     <header>
         <div id="l-header">
-            <i id="logo-menu" class="bi bi-list"></i>
+            <span id="logo-menu" class="bi bi-list"></span>
             <h1 id="logo-marca">&lt;IchiroDev&gt;<h1>
             <div id="l-nav">
-                <label for="pesquisa"><i id="logo-prsquisar" class="bi bi-search"></i></label>
-                <i id="logo-carinho" class="bi bi-bucket-fill"></i>
+                <label for="pesquisa"><span id="logo-prsquisar" class="bi bi-search" onclick="clickPesquisar()"></span></label>
+                <span id="logo-carinho" class="bi bi-bucket-fill"></span>
             </div>
         </div>
         <div id="l-input">
             <form action="" method="GET" autocomplete="on">
-                <input type="text" required placeholder="Pesquisar" id="pesquisa" name="pesquisa">
-                <input type="submit" value="Pesquisar">
+                <div id="form">
+                    <input type="text" required placeholder="Pesquisar" id="pesquisa" name="pesquisa">
+                    <input type="submit" value="Pesquisar">
+                </div>
             </form>
         </div>
     </header>
+    <script>
+        function clickPesquisar() {
+            if (form.style.display == "block") {
+                form.style.display = "none"
+            } else {;
+                form.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
