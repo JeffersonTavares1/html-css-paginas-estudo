@@ -2,16 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2? family= Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300; 1.400;1.500;1.600;1.700;1.800 & display=swap');
+
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
     --cor-fundo-header: whitesmoke;
+    --cor-icon: #39355C;
+    --cor-logo: #2B253D;
     --fonte-padrao: "Poppins", sans-serif;
+    --font-butao: "Kanit", sans-serif;
 }
 
 header {
@@ -26,12 +32,12 @@ div#l-header {
 }
 
 div#l-header span {
-    color: #39355C;
+    color: var(--cor-icon);
     font-size: 2rem;
 }
 
 div#l-header h1#logo-marca {
-    color: #2B253D;
+    color: var(--cor-logo);
     font-family: var(--fonte-padrao);
     font-size: 2.4rem;
     font-weight: bolder;
@@ -55,9 +61,70 @@ div#form input {
     border-radius: 10px;
     border: 2px solid #2B253D;
     outline: none;
-    
+    color: var(--cor-icon);
 }
 
 div#firm input#pesquisa {
     width: 300px;
+}
+
+main section.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 30px;
+    
+    padding-bottom: 80px;
+    width: 100%;
+    height: 550px;
+}
+main section.img>div.box-titulos {
+    font-size: 2rem;
+    text-align: center;
+}
+
+main section.img > div > .button {
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: var(--cor-logo);
+    font-size: 1.2rem;
+    font-family: var(--font-butao);
+    font-weight: 900;
+}
+
+main section#img1 {
+    background: black url("../imagens/foto3.jpg") center bottom no-repeat;
+    background-size: cover;
+    color: #B3A283;
+}
+
+main section#img1 h1#titulo1 {
+    
+}
+
+main section#img1 h1#titulo2 {
+    
+}
+
+
+
+main section#img2 {
+    background: black url("../imagens/foto1.jpg") center bottom no-repeat;
+    background-size: cover;
+    color: #DFE1CD;
+    
+}
+
+main section#img2 > div.box-titulos {
+    font-size: 1.3rem;
+}
+
+main section#img2 h1#titulo1 {
+    
+}
+
+main section#img2 h1#titulo2 {
+    
 }
