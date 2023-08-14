@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo-header: whitesmoke;
+    --fonte-padrao: "Poppins", sans-serif;
+}
+
+header {
+    background-color: var(--cor-fundo-header);
+    padding: 10px;
+}
+
+div#l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#l-header i {
+    color: #39355C;
+    font-size: 2rem;
+}
+
+div#l-header h1#logo-marca {
+    color: #2B253D;
+    font-family: var(--fonte-padrao);
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+div#l-nav {
+    display: flex;
+    gap: 20px;
+}
+
+div#l-input {
+    text-align: center;
+}
+
+div#l-input input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #2B253D;
+}
+
+div#l-input input#pesquisa {
+    width: 300px;
+}
