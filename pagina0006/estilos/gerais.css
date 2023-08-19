@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Mansalva&family=Neucha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --roxoclaro: #39355C;
+    --roxoescuro: #2B253D;
+    --verdeclaro: #CAD2C5;
+    
+    --font1: 'Lumanosimo', cursive;
+    --font2: 'Mansalva', cursive;
+    --font3: 'Neucha', cursive;
+}
+
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 70px;
+    padding: 1rem;
+    background: #C98F81;
+}
+
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
+#nav > #btn-mobile {
+    display: none;
+}
+
+
+/*faiz iso se atela for menor que 600px*/
+@media (max-width: 600px) {
+    #nav > #btn-mobile {
+        /*mostra o botão em tela menor que 600*/
+        display: block;
+    }
+    
+    #menu {
+        display: none; /*esconde a janela em tela menor que 600*/
+        
+        position: absolute; /*vai ficar por cima de qualquer elemento*/
+        width: 70%; /*aqui controla a largura da janela do menu*/
+        top: 70px; /*aqui controla a altura que vai começar a janela do menu*/
+        left: 0px; /*aqui controla o lado que vai abrir o menu*/
+        
+        background: #9E98BD;
+        height: calc(100vh - 70px); /*aqui tira o 70px do header pra tira a rolagem vertical do 100vh + 70px do header*/
+        z-index: 1000; /*garante que vai ficar sempre por cima dos elementos abaixo*/
+    }
+    
+    /*aciona com js e mostra a janela*/
+    #nav.active #menu {
+        display: block;
+    }
+}
+

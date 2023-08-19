@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Mansalva&family=Neucha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --roxoclaro: #39355C;
+    --roxoescuro: #2B253D;
+    --verdeclaro: #CAD2C5;
+    
+    --font1: 'Lumanosimo', cursive;
+    --font2: 'Mansalva', cursive;
+    --font3: 'Neucha', cursive;
+}
+
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 70px;
+    padding: 1rem;
+    background: #C98F81;
+}
+
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+
+#nav > #btn-mobile {
+    display: none;
+}
+
+
+/*faiz iso se atela for menor que 600px*/
+@media (max-width: 600px) {
+    #nav > #btn-mobile {
+        display: flex; /*mostra o botão em tela menor que 600*/
+        
+        padding: .5rem 1rem;
+        
+        font-size: 1rem;
+        
+        border: none;
+        
+        background: none;
+        
+        cursor: pointer; /*mostrar mão quando botar mouse em cima*/
+        
+        gap: 0.5rem; /*separa (span hamburguer do (Menu dentro do button)*/
+    }
+    
+    #hamburguer {
+        display: block; /*aqui indoca que ele e um bloco pra funcionar o width e height*/
+        
+        width: 20px;
+        
+        border-top: 2px solid;
+    }
+    
+    /*after: depois do; / before: depois depois do; (aqui cria os 2 border-top de baixo do Hamburguer*/
+    #hamburguer::after, #hamburguer::before { 
+        position: relative; /*aqui e so pra posicionar as borda meio a meio pra formarem um X*/
+        
+        display: block; /*aqui indoca que ele e um bloco pra funcionar o width e height*/
+        
+        width: 20px;
+        height: 2px;
+        
+        background: currentColor; /*currentColor e como se fose uma várias que contem o valor da dor que tiver dentro do Hamburguer (tipo inherit*/
+        
+        margin-top: 5px;
+        
+        content: ""; /*para o after existir ele tem que ter um conteúdo. contet da um conteúdo para ele.*/
+        
+        transition: .3s;
+    }
+    
+    
+    #nav.active #hamburguer {
+        border-top-color: transparent; /*tirou a borda de cima do Hamburguer*/
+    }
+    
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg); /*rotaciona o 2 traso da border-top*/
+    }
+    
+    nav.active #hamburguer::after{
+        transform: rotate(-135deg); /*rotaciona o 3 traso da border-top ao contrário*/
+        top: -7px; /*posicionou pra cima pras bordas formarem um X*/
+    }
+    
+    #menu {
+        display: block; /*esconde a janela em tela menor que 600*/
+        
+        position: absolute; /*vai ficar por cima de qualquer elemento*/
+        width: 70%; /*aqui controla a largura da janela do menu*/
+        top: 70px; /*aqui controla a altura que vai começar a janela do menu*/
+        left: 0px; /*aqui controla o lado que vai abrir o menu*/
+        height: 0px; /*aqui controla a altura da janela*/
+        
+        transition: 0.5s; /*animação ao aumentar a janela de height 0px para height: calc(100vh - 70px);*/
+        
+        background: #9E98BD;
+        z-index: 1000; /*garante que vai ficar sempre por cima dos elementos abaixo*/
+        
+        visibility: hidden; /*a janela começa escondida aqui*/
+        overflow-y: hidden; /*aqui esconde o conteúdo conforme a janela vai subindo pra se esconder*/
+    }
+    
+    /*aciona com js e mostra a janela*/
+    #nav.active #menu {
+        height: calc(100vh - 70px); /*aqui tira o 70px do header pra tira a rolagem vertical do 100vh + 70px do header (mosta a janela ate o final da tela na vertical)*/
+        
+        visibility: visible; /*aqui a janela e mostrada*/
+        overflow-y: auto; /* aqui e caso se a janela tive muito conteúdo, ele cria uma rolagem pra mostrar o conteúdo que nao coube mostrar na tela. Sem ele o conteúdo não vai ser mostrado*/
+    }
+    
+}
+
