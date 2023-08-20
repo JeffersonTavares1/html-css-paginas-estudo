@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 350px) and (max-width: 699px) {
+@media screen and (min-width: 350px) and (max-width: 700px) {
     
     .nav.active .hamburguer {
         border-top-color: transparent;
@@ -51,7 +51,7 @@
     
 }
 
-@media screen and (min-width: 700px) and (max-width: 1200px) {
+@media screen and (min-width: 700px) {
     .btn-menu {
         display: none;
     }
