@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 350px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
     
     .nav.active .hamburguer {
         border-top-color: transparent;
@@ -17,29 +17,28 @@
     
     /*aqui controla a janela abrindo*/
     .nav.active .menu {
-        height: calc(100vh - 4.6875rem); /*aqui ta tirando a altura que ta no header. aqui controla o tamanho vertical da janela*/
-        visibility: visible;
-        overflow-y: auto;
+        height: calc(100vh - 5rem); /*aqui ta tirando a altura que ta no header. aqui controla o tamanho vertical da janela*/
+        visibility: visible; /*aqui mostra a janela*/
+        overflow-y: auto; /*aqui e pra cria barra de rolagem caso a janela tenha muito conteúdos, sem isso os conteúdos passando da tela não aparecem*/
     }
     
     /*aqui controla a janela fechado (ul), que so vai ser acionado no js*/
     .menu {
         display: block;
         position: absolute;
-        top: 4.6875rem;
+        top: 5rem; /*aqui controla a autura da janela*/
         right: 0; /*aqui controla o lado que vai ficar a janela*/
         width: 70%; /*aqui controla a largura da janela*/
-        height: 0;
-        padding: 0.625rem;
-        background-color: var(--roxoescuro);
         
+        background-color: var(--roxoescuro);
         text-align: center;
         
         z-index: 1; /*aqui controla oque vai ter prioridade pra mostra em cima (aumenta caso tenha pobkema com isso)*/
         
-        transition: 0.5s;
-        visibility: hidden;
-        overflow-y: hidden;
+        height: 0; /*quando tiver fechado tem a altura de 0*/
+        transition: 0.3s; /*faz uma animação comforme vai escondendo*/
+        visibility: hidden; /*aqui esconde a janela*/
+        overflow-y: hidden; /*aqui e pra esconder os conteúdos junto com a div*/
     }
     
     .menu a {
