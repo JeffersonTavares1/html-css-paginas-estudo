@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IchiroDev</title>
+    
+    <link rel="stylesheet" href="estilos/gerais.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            
+            <!--
+                Tributos de acessibilidades:
+                    aria-label = rótulo, informa oque o Butão faz;
+                    aria-haspopup = informe que aqui vai ser um popup;
+                    aria-controls = indica qual elemento esse botão vai controlar;
+                    aria-expanded = indica se o menu está expandindo ou reconhecido, false porque ele começa fechando nesse caso;
+                    role = informa que ul e um menu
+            -->
+            
+            <button class="btn-menu" aria-label="Abri Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span class="hamburguer"></span>
+                Menu
+            </button>
+            
+            <ul class="menu" role="menu">
+                <li><a href="#Início">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="logo">.Logotipo</a>
+    </header>
+    
+    
+    <script src="codigojs/main.js"></script>
+</body>
+</html>

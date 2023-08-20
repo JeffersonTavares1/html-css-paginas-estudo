@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 350px) and (max-width: 699px) {
+    
+    .nav.active .hamburguer {
+        border-top-color: transparent;
+    }
+    
+    .nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    
+    .nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+    
+    /*aqui controla a janela abrindo*/
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem); /*aqui ta tirando a altura que ta no header. aqui controla o tamanho vertical da janela*/
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    /*aqui controla a janela fechado (ul), que so vai ser acionado no js*/
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        right: 0; /*aqui controla o lado que vai ficar a janela*/
+        width: 70%; /*aqui controla a largura da janela*/
+        height: 0;
+        padding: 0.625rem;
+        background-color: var(--roxoescuro);
+        
+        text-align: center;
+        
+        z-index: 1; /*aqui controla oque vai ter prioridade pra mostra em cima (aumenta caso tenha pobkema com isso)*/
+        
+        transition: 0.5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    .menu a {
+        display: block;
+        padding-block: 1rem;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid red;
+    }
+    
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .btn-menu {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        gap: 0.5rem;
+        
+    }
+    
+    .menu a {
+        display: block;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: whitesmoke;
+    }
+    
+    .menu a:hover {
+        background-color: var(--roxoclaro);
+    }
+
+
+}
