@@ -24,5 +24,7 @@ Sexta página, tudo pronto:
 Sétima página, tudo pronto:
 <a href="https://jeffersontavares1.github.io/html-css-paginas-estudo/pagina0007/" target="_blank">pagina de estudo 7</a>
 
+oitava página, tudo pronto:
+<a href="https://jeffersontavares1.github.io/html-css-paginas-estudo/pagina0008/" target="_blank">pagina de estudo 8</a>
 
 

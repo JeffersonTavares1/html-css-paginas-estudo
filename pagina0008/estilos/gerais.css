@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Mansalva&family=Neucha&display=swap');
+
+/*configurações gerais*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --roxo1: #48489C;
+    --roxo2: #39355C;
+    --roxo3: #2B253D;
+    
+    --verde1: #E7F9A9;
+    --verde2: #CAD2C5;
+    --verde3: #9DBF9E;
+    --verde4: #537354;
+    
+    --amarelo1: #FCA311;
+    
+    --font1: 'Lumanosimo', cursive;
+    --font2: 'Mansalva', cursive;
+    --font3: 'Neucha', cursive;
+}
+
+
+.header {
+    background-color: var(--roxo2);
+    padding-inline: 16px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: var(--font1);
+    color: var(--verde1);
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--verde2);
+    padding-block: 16px;
+}
+
